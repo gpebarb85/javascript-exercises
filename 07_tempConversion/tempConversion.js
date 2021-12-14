@@ -1,9 +1,11 @@
-const ftoc = function() {
-
+const ftoc = function(degree) {
+  celcius = (degree - 32) * (5/9);
+  return Number(celcius.toFixed(1));
 };
 
-const ctof = function() {
-
+const ctof = function(degree) {
+  fheit = degree * (9/5) + 32;
+  return Number(fheit.toFixed(1));
 };
 
 // Do not edit below this line
